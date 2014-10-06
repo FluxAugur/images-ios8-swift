@@ -13,6 +13,11 @@
 		A71A223F19CD7548008D4E75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71A223E19CD7548008D4E75 /* Images.xcassets */; };
 		A71A224219CD7548008D4E75 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71A224019CD7548008D4E75 /* LaunchScreen.xib */; };
 		A71A224E19CD7548008D4E75 /* ImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A224D19CD7548008D4E75 /* ImagesTests.swift */; };
+		A71A225C19CD7663008D4E75 /* alien1.png in Resources */ = {isa = PBXBuildFile; fileRef = A71A225719CD7662008D4E75 /* alien1.png */; };
+		A71A225D19CD7663008D4E75 /* alien2.png in Resources */ = {isa = PBXBuildFile; fileRef = A71A225819CD7663008D4E75 /* alien2.png */; };
+		A71A225E19CD7663008D4E75 /* alien3.png in Resources */ = {isa = PBXBuildFile; fileRef = A71A225919CD7663008D4E75 /* alien3.png */; };
+		A71A225F19CD7663008D4E75 /* alien4.png in Resources */ = {isa = PBXBuildFile; fileRef = A71A225A19CD7663008D4E75 /* alien4.png */; };
+		A71A226019CD7663008D4E75 /* alien5.png in Resources */ = {isa = PBXBuildFile; fileRef = A71A225B19CD7663008D4E75 /* alien5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		A71A224719CD7548008D4E75 /* ImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71A224C19CD7548008D4E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A71A224D19CD7548008D4E75 /* ImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTests.swift; sourceTree = "<group>"; };
+		A71A225719CD7662008D4E75 /* alien1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien1.png; sourceTree = "<group>"; };
+		A71A225819CD7663008D4E75 /* alien2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien2.png; sourceTree = "<group>"; };
+		A71A225919CD7663008D4E75 /* alien3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien3.png; sourceTree = "<group>"; };
+		A71A225A19CD7663008D4E75 /* alien4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien4.png; sourceTree = "<group>"; };
+		A71A225B19CD7663008D4E75 /* alien5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien5.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,11 @@
 		A71A223419CD7547008D4E75 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A71A225719CD7662008D4E75 /* alien1.png */,
+				A71A225819CD7663008D4E75 /* alien2.png */,
+				A71A225919CD7663008D4E75 /* alien3.png */,
+				A71A225A19CD7663008D4E75 /* alien4.png */,
+				A71A225B19CD7663008D4E75 /* alien5.png */,
 				A71A223719CD7548008D4E75 /* AppDelegate.swift */,
 				A71A223919CD7548008D4E75 /* ViewController.swift */,
 				A71A223B19CD7548008D4E75 /* Main.storyboard */,
@@ -195,6 +210,11 @@
 				A71A223D19CD7548008D4E75 /* Main.storyboard in Resources */,
 				A71A224219CD7548008D4E75 /* LaunchScreen.xib in Resources */,
 				A71A223F19CD7548008D4E75 /* Images.xcassets in Resources */,
+				A71A226019CD7663008D4E75 /* alien5.png in Resources */,
+				A71A225C19CD7663008D4E75 /* alien1.png in Resources */,
+				A71A225D19CD7663008D4E75 /* alien2.png in Resources */,
+				A71A225F19CD7663008D4E75 /* alien4.png in Resources */,
+				A71A225E19CD7663008D4E75 /* alien3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

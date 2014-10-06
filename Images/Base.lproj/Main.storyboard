@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Images" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="alien1.png" translatesAutoresizingMaskIntoConstraints="NO" id="8rD-hR-5pa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcI-ew-oC0">
+                                <rect key="frame" x="16" y="550" width="97" height="30"/>
+                                <state key="normal" title="Update Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GWC-Hd-lUg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8rD-hR-5pa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="6EB-ec-X6J"/>
+                            <constraint firstItem="8rD-hR-5pa" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="BBV-f4-EPB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="8rD-hR-5pa" secondAttribute="bottom" id="Lw1-Ae-Liv"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GcI-ew-oC0" secondAttribute="bottom" constant="20" id="be6-u9-NI1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8rD-hR-5pa" secondAttribute="trailing" constant="-16" id="g3b-l8-Juu"/>
+                            <constraint firstItem="GcI-ew-oC0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="pkp-oX-HM1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6EB-ec-X6J"/>
+                                <exclude reference="BBV-f4-EPB"/>
+                                <exclude reference="g3b-l8-Juu"/>
+                                <exclude reference="Lw1-Ae-Liv"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="alien" destination="8rD-hR-5pa" id="0Eu-tj-t1m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="alien1.png" width="49" height="86"/>
+    </resources>
 </document>
